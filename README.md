@@ -1,3 +1,12 @@
+# _Tetras Tap Room_
+
+#### _By Alyssa Colistro_
+
+**Description**
+_This application will allow the user (ex: a bar manager) to track the kegs of beer coming in and out of their bar and how much beer is in each keg. This is an app biult with React._
+
+### Preview
+
 ### Component Diagram
 <img src='./src/img/TetrasTapRoom.png'>
 
