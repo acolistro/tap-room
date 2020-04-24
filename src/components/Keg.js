@@ -13,7 +13,7 @@ function Keg(props){
   )
 }
 
-Ticket.PropTypes = {
+Keg.propTypes = {
   beer: PropTypes.string.isRequired,
   dateTapped: PropTypes.string.isRequired,
   pintsLeft: PropTypes.string,
