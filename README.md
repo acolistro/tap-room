@@ -1,6 +1,6 @@
-# _Tetras Tap Room_
+# _Tetra's Tap Room_
 
-#### _By Alyssa Colistro_
+#### _By Alyssa Colistro, April 2020_
 
 **Description**
 _This application will allow the user (ex: a bar manager) to track the kegs of beer coming in and out of their bar and how much beer is in each keg. This is an app biult with React._
@@ -12,6 +12,48 @@ _This application will allow the user (ex: a bar manager) to track the kegs of b
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## _Specs_
+
+| Behavior | Input | Output |
+|----------|:-----:|--------|
+| User clicks on the add keg button | 'click' | The app shows the user a form they can fill out to add a Keg |
+| User fills out information for the keg they would like to add in the form and clicks 'submit' | "Corona" "1/23/20" "128" | App shows a new list that includes the newly added keg displaying the information entered in the form | 
+| User clicks on a keg in the main list | 'click' | The app displays the details of that individual keg |
+| The user can navigate to the main list by clicking 'back to list' button | 'click' | App displays main list of all kegs |
+
+## User Stories
+
+
+* As a user, I want to see a list/menu of all available kegs. 
+* For each keg, I want to see its name, brand, price and alcoholContent.
+* As a user, I want to submit a form to add a new keg to a list.
+* As a user, I want to be able to click on a keg to see its detail page.
+* As a user, I want to see how many pints are left in a keg. 
+
+## Stretch Goals
+
+* Add functionality to update pints left in keg with a 'pint sold'
+* Add styling to imply that this is an Aquarium bar with Aquairum theme
+* Add ability to manage aquariums in a similar manner to the way kegs are managed
+
+## Setup/Installation Instructions
+
+Clone this repository from GitHub:
+`$ cd desktop`
+`$ git clone https://github.com/acolistro/tap-room.git`
+
+Open and run this app:
+`$ cd tap-room`
+`$ npm install`
+`$ npm run build`
+`$ npm start`
+
+Navigate to localhost:3000 in your browser if it doesn't open automatically.
+
+## Current Issues
+
+_There are no known issues with the app in it's current state. If a bug is found or you would like to give feedback, please contact me at arcolistro@gmail.com or submit a pull request._
 
 ## Available Scripts
 
@@ -79,3 +121,19 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## Technologies Used
+
+* HTML 5
+* CSS
+* JavaScript / JSX
+* Node Package Manager (npm)
+* Git
+* Webpack
+* ReactJS
+
+Built on VSCode, please use the most updated version of Chrome browser or Mozilla Firefox browser.
+
+## License
+
+_This app is licensed under the MIT license_

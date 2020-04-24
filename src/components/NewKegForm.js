@@ -8,7 +8,10 @@ function NewKegForm(props){
     props.onNewKegCreation({
       beer: event.target.beer.value, 
       dateTapped: event.target.dateTapped.value,
-      pintsLeft: event.target.pintsLeft.value,
+      brand: event.target.brand.value,
+      style: event.target.style.value,
+      pricePerPint: event.target.pricePerPint.value,
+      alcoholContent: event.target.alcoholContent.value,
       id: v4()
     });
   }
@@ -26,6 +29,22 @@ function NewKegForm(props){
           placeholder='Date Keg was Tapped' />
         <input
           type='text'
+          name='brand'
+          placeholder='Brand' />
+        <input
+          type='text'
+          name='style'
+          placeholder='Style of Beer' />
+        <input
+          type='text'
+          name='pricePerPint'
+          placeholder='Price per Pint' />
+        <input
+          type='text'
+          name='alcoholContent'
+          placeholder='Alcohol Content' />
+        <input
+          type='int'
           name='pintsLeft'  
           placeholder='Pints Left in this Keg' />  
           <button type='submit'>Add Keg</button>
