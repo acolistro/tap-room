@@ -7,7 +7,7 @@ function EditKegForm (props) {
 
   function handleEditKegFormSubmission(event) {
     event.preventDefault();
-    props.onEditKeg({beer: event.target.beer.value, dateTapped: event.target.dateTapped.value, brand: event.target.brand.value,style: event.target.style.value, pricePerPint: event.target.pricePerPint.value, alcoholContent: event.target.alcoholContent.value, id: keg.id
+    props.onEditKeg({beer: event.target.beer.value, dateTapped: event.target.dateTapped.value, brand: event.target.brand.value,style: event.target.style.value, pricePerPint: event.target.pricePerPint.value, alcoholContent: event.target.alcoholContent.value, pintsLeft: event.target.pintsLeft.value, id: keg.id
     });
   }
 
@@ -20,8 +20,8 @@ function EditKegForm (props) {
   );
 }
 
-EditTicketForm.propTypes = {
-  onEditTicket: PropTypes.func
+EditKegForm.propTypes = {
+  onEditKeg: PropTypes.func
 };
 
-export default EditTicketForm;
+export default EditKegForm;
