@@ -42,8 +42,12 @@ class KegControl extends React.Component
   }
 
   handlePintSold = (id) => {
-    const selectedBeer = this.state.masterKegList.filter(beer => beer.id === id)[0];
-    this.setState({ masterKegList: newMasterKegList, selectedKeg: newBeer })
+    const selectedKeg = this.state.masterKegList.filter(keg => keg.id === id)[0];
+    if (selectedKeg.pintsLeft > 0) {
+      const updateKeg = { ...selectedKeg, pintsLeft: selectedKeg.pintsLeft -1 };
+      const newMasterKegList = this.state.masterKegList.filter(keg => keg.id !== id);
+      this.setState({ masterKegList: [ ...newMasterKegList, updateKeg ]})
+    }
   }
 
   handleEditClick = () => {
