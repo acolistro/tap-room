@@ -12,7 +12,6 @@ class KegControl extends React.Component
       formVisibleOnPage: false,
       masterKegList: [],
       selectedKeg: null,
-      editing: false
     };
   }
 
@@ -21,7 +20,6 @@ class KegControl extends React.Component
       this.setState({
         formVisibleOnPage: false,
         selectedKeg: null,
-        editing: false
       });
     } else {
       this.setState(prevState => ({
@@ -41,6 +39,11 @@ class KegControl extends React.Component
   handleChangingSelectedKeg = (id) => {
     const selectedKeg = this.state.masterKegList.filter(keg => keg.id === 0)[0];
     this.setState({ selectedKeg: selectedKeg });
+  }
+
+  handlePintSold = (id) => {
+    const selectedBeer = this.state.masterKegList.filter(beer => beer.id === id)[0];
+    this.setState({ masterKegList: newMasterKegList, selectedKeg: newBeer })
   }
 
   handleEditClick = () => {
